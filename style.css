@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+canvas {
+    display: block;
+}
+
+.screen {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle, #001, #000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: cyan;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 8px;
+    background: cyan;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#ui {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#shop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #111;
+    border: 3px solid cyan;
+    padding: 20px;
+    text-align: center;
+}
+
+#exitBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+}
+
+

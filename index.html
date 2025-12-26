@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neon Survivor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="game"></canvas>
+
+<!-- MAIN MENU -->
+<div id="menu" class="screen">
+    <h1>⚡ NEON SURVIVOR ⚡</h1>
+    <button onclick="startGame()">▶ Start Game</button>
+    <button onclick="openPayments()">💎 App Payments</button>
+</div>
+
+<!-- PAYMENTS SCREEN -->
+<div id="payments" class="screen hidden">
+    <h2>💎 App Payments</h2>
+    <p>(Mock purchases)</p>
+    <button onclick="buyPremium()">🔥 Premium Skin</button>
+    <button onclick="buyCoins()">💰 +500 Coins</button>
+    <br><br>
+    <button onclick="backToMenu()">⬅ Back</button>
+</div>
+
+<!-- UI -->
+<div id="ui" class="hidden"></div>
+
+<!-- SHOP -->
+<div id="shop" class="hidden">
+    <h2>🛒 SHOP</h2>
+
+    <h3>🔫 Guns</h3>
+    <button onclick="buyGun('shotgun')">Shotgun (150)</button>
+    <button onclick="buyGun('rifle')">Rifle (200)</button>
+    <button onclick="buyGun('laser')">Laser (300)</button>
+
+    <h3>🛡️ Armor</h3>
+    <button onclick="buyArmor('light')">Light Armor (150)</button>
+    <button onclick="buyArmor('medium')">Medium Armor (250)</button>
+    <button onclick="buyArmor('heavy')">Heavy Armor (400)</button>
+
+    <br><br>
+    <button onclick="toggleShop()">❌ Close</button>
+</div>
+
+<button id="exitBtn" class="hidden" onclick="exitToMenu()">⏹ Exit</button>
+
+<script src="game.js"></script>
+</body>
+</html>
